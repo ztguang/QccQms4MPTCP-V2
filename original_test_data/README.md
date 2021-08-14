@@ -1,1 +1,18 @@
+All experiments are performed between OnePlus 8T with Android 11 and the aliyun server.
+
+We do the following four rounds of experiments when QoE is equal to 1, 2, 3, 7 and 11 respectively. 
+
+(1) using scp to send 160 MB of data (folder drivers) to the aliyun server; 
+(2) using scp to send 160 MB of data (folder drivers) to the aliyun server at different packet loss rates; 
+(3) using iperf3 to send 160 MB of data to the aliyun server; and 
+(4) using iperf3 to send 160 MB of data to the aliyun server at different packet loss rates.
+
+Because the files captured by tcpdump are relatively large and cannot be uploaded to GitHub, the download link is given here
+
+link: https://pan.baidu.com/s/1UvfzEiilTJLIzi93_7ab9w
+Extraction code: pnb9
+
+    All raw data files of test are listed in 'resultspaper2---original--test--data---20210729---OK'
+    Flash package lineage-18.1-20210724-UNOFFICIAL-kebab.zip for OnePlus 8T
+    drivers.zip is the compressed file of folder 'drivers'
 
