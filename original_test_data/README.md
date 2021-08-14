@@ -10,7 +10,7 @@ We do the following four rounds of experiments when QoE is equal to 1, 2, 3, 7 a
 
 (4) using iperf3 to send 160 MB of data to the aliyun server at different packet loss rates.
 
-Because the files captured by tcpdump are relatively large and cannot be uploaded to GitHub, the download link is given here
+Because the files captured by tcpdump are relatively large and cannot be uploaded to GitHub, the download link is given.
 
 link: https://pan.baidu.com/s/1UvfzEiilTJLIzi93_7ab9w
 
