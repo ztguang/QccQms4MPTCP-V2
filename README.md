@@ -1,7 +1,7 @@
 # QccQms4MPTCP-V2
-Applying MPTCP to Real Edge Wireless Network
+Applying MPTCP to Real Wireless Edge Networks
 
-We are the first to propose a QoE-driven novel framework for using Android kernel MPTCP in the real world, 
+We are the first to propose a novel QoE-driven framework for using Android kernel MPTCP in the real world, 
 which mainly includes a QoE-driven congestion controller (QCC) and a QoE-driven MPTCP scheduler (QMS).
 
 
