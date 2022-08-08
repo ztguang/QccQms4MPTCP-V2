@@ -4,6 +4,13 @@ tcpdump---test-03-def-cubic-qoe03.txt
 39.144.181.16
 mptcp\ capable
 
+主流建立时间：12:07:50.085777
+子流建立时间：12:07:50.306197
+子流发送时间：12:07:50.345872
+
+主流建立后建立子流的时间：0.220420
+子流建立后开始发送数据的时间：0.039675
+
 
 12:07:49.938015 IP (tos 0x14, ttl 50, id 29423, offset 0, flags [DF], proto TCP (6), length 72)
     125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [S], cksum 0x49e5 (correct), seq 572888491, win 65535, options [mss 1440,sackOK,TS val 1218289359 ecr 0,nop,wscale 9,mptcp capable csum {0x6dd01d2e9ce0f57a}], length 0
@@ -12,6 +19,8 @@ mptcp\ capable
 12:07:49.962591 IP (tos 0x14, ttl 50, id 29424, offset 0, flags [DF], proto TCP (6), length 80)
     125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x638a (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 1218289423 ecr 2285532379,mptcp capable csum {0x6dd01d2e9ce0f57a,0xef3b24ff9e4cb0c7},mptcp dss ack 1661232034], length 0
 
+
+12:07:50.061724 IP (tos 0x14, ttl 50, id 2520, offset 0, flags [DF], proto TCP (6), length 72)
     125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [S], cksum 0xfa4e (correct), seq 409175, win 65535, options [mss 1440,sackOK,TS val 1218289523 ecr 0,nop,wscale 9,mptcp capable csum {0x3b3a6892ffce4220}], length 0
 12:07:50.061752 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 72)
     172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [S.], cksum 0x9b96 (incorrect -> 0xf02e), seq 4034061139, ack 409176, win 64260, options [mss 1460,sackOK,TS val 2285532503 ecr 1218289523,nop,wscale 7,mptcp capable csum {0x1cbccab016ce2520}], length 0

@@ -6,6 +6,15 @@ mptcp\ capable
 
 
 
+主流建立时间：22:33:29.525834
+子流建立时间：22:33:29.749532
+子流发送时间：22:33:29.784210
+
+主流建立后建立子流的时间：0.223698
+子流建立后开始发送数据的时间：0.034678
+
+
+
 22:33:29.394352 IP (tos 0x14, ttl 50, id 4823, offset 0, flags [DF], proto TCP (6), length 72)
     125.42.146.219.28885 > 172.17.223.68.targus-getdata1: Flags [S], cksum 0xf699 (correct), seq 49770659, win 65535, options [mss 1440,sackOK,TS val 4038855237 ecr 0,nop,wscale 9,mptcp capable csum {0x8635a1edbcbf8edd}], length 0
 22:33:29.394379 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 72)
