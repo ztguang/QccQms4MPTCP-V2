@@ -1,0 +1,79 @@
+tcpdump---test-03-def-cubic-qoe03.txt
+
+39\.144\.181\.16
+39.144.181.16
+mptcp\ capable
+
+
+12:07:49.938015 IP (tos 0x14, ttl 50, id 29423, offset 0, flags [DF], proto TCP (6), length 72)
+    125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [S], cksum 0x49e5 (correct), seq 572888491, win 65535, options [mss 1440,sackOK,TS val 1218289359 ecr 0,nop,wscale 9,mptcp capable csum {0x6dd01d2e9ce0f57a}], length 0
+12:07:49.938050 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 72)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.17231: Flags [S.], cksum 0x9b96 (incorrect -> 0x9c9b), seq 3753742168, ack 572888492, win 64260, options [mss 1460,sackOK,TS val 2285532379 ecr 1218289359,nop,wscale 7,mptcp capable csum {0xef3b24ff9e4cb0c7}], length 0
+12:07:49.962591 IP (tos 0x14, ttl 50, id 29424, offset 0, flags [DF], proto TCP (6), length 80)
+    125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x638a (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 1218289423 ecr 2285532379,mptcp capable csum {0x6dd01d2e9ce0f57a,0xef3b24ff9e4cb0c7},mptcp dss ack 1661232034], length 0
+
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [S], cksum 0xfa4e (correct), seq 409175, win 65535, options [mss 1440,sackOK,TS val 1218289523 ecr 0,nop,wscale 9,mptcp capable csum {0x3b3a6892ffce4220}], length 0
+12:07:50.061752 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 72)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [S.], cksum 0x9b96 (incorrect -> 0xf02e), seq 4034061139, ack 409176, win 64260, options [mss 1460,sackOK,TS val 2285532503 ecr 1218289523,nop,wscale 7,mptcp capable csum {0x1cbccab016ce2520}], length 0
+12:07:50.085777 IP (tos 0x14, ttl 50, id 2521, offset 0, flags [DF], proto TCP (6), length 80)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x5287 (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 1218289546 ecr 2285532503,mptcp capable csum {0x3b3a6892ffce4220,0x1cbccab016ce2520},mptcp dss ack 3483669343], length 0
+12:07:50.085881 IP (tos 0x0, ttl 64, id 32449, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [.], cksum 0x9b8a (incorrect -> 0x971d), seq 1, ack 1, win 503, options [nop,nop,TS val 2285532527 ecr 1218289546,mptcp dss ack 4252473127], length 0
+12:07:50.085899 IP (tos 0x14, ttl 50, id 2522, offset 0, flags [DF], proto TCP (6), length 68)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x324b (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 1218289546 ecr 2285532503,mptcp add-addr id 2 10.28.27.206,mptcp dss ack 3483669343], length 0
+12:07:50.096694 IP (tos 0x14, ttl 50, id 2523, offset 0, flags [DF], proto TCP (6), length 109)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [P.], cksum 0x3001 (correct), seq 1:38, ack 1, win 128, options [nop,nop,TS val 1218289548 ecr 2285532503,mptcp dss ack 3483669343 seq 4252473127 subseq 1 len 37 csum 0xb0e3], length 37
+12:07:50.096720 IP (tos 0x0, ttl 64, id 32450, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [.], cksum 0x9b8a (incorrect -> 0x96c6), seq 1, ack 38, win 503, options [nop,nop,TS val 2285532538 ecr 1218289548,mptcp dss ack 4252473164], length 0
+12:07:50.097719 IP (tos 0x14, ttl 50, id 29430, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x5155 (correct), seq 158, ack 3, win 128, options [nop,nop,TS val 1218289560 ecr 2285532473,mptcp dss ack 1661232036], length 0
+12:07:50.097728 IP (tos 0x0, ttl 64, id 25685, offset 0, flags [DF], proto TCP (6), length 74)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.17231: Flags [P.], cksum 0x9b98 (incorrect -> 0x1556), seq 3:5, ack 158, win 503, options [nop,nop,TS val 2285532539 ecr 1218289489,mptcp dss ack 3509210868 seq 1661232036 subseq 3 len 2 csum 0xe940], length 2
+12:07:50.124580 IP (tos 0x14, ttl 50, id 29431, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.17231 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x50f5 (correct), seq 158, ack 5, win 128, options [nop,nop,TS val 1218289586 ecr 2285532539,mptcp dss ack 1661232038], length 0
+12:07:50.126639 IP (tos 0x14, ttl 50, id 2524, offset 0, flags [DF], proto TCP (6), length 1480)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x2a3f (correct), seq 38:1446, ack 1, win 128, options [nop,nop,TS val 1218289587 ecr 2285532538,mptcp dss ack 3483669343 seq 4252473164 subseq 38 len 1408 csum 0x397f], length 1408
+
+
+
+12:07:50.249320 IP (tos 0x14, ttl 50, id 11284, offset 0, flags [DF], proto TCP (6), length 72)
+    39.144.181.16.8422 > 172.17.223.68.targus-getdata1: Flags [S], cksum 0x30b6 (correct), seq 2080771204, win 65535, options [mss 1380,sackOK,TS val 4102506869 ecr 0,nop,wscale 9,mptcp join id 2 token 0x1eefb38f nonce 0x7f3703e3], length 0
+12:07:50.249342 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 76)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.8422: Flags [S.], cksum 0x6864 (incorrect -> 0x6b69), seq 2294469619, ack 2080771205, win 64260, options [mss 1460,sackOK,TS val 2378267818 ecr 4102506869,nop,wscale 7,mptcp join id 2 hmac 0xc2d9f37ef0417e81 nonce 0x500d332e], length 0
+
+
+12:07:50.270997 IP (tos 0x14, ttl 50, id 10957, offset 0, flags [DF], proto TCP (6), length 72)
+    39.144.181.16.38681 > 172.17.223.68.targus-getdata1: Flags [S], cksum 0x8a5b (correct), seq 3559928769, win 65535, options [mss 1380,sackOK,TS val 4102506998 ecr 0,nop,wscale 9,mptcp join id 2 token 0xdfbe6bd6 nonce 0x9c0c1e36], length 0
+12:07:50.271016 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 76)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.38681: Flags [S.], cksum 0x6864 (incorrect -> 0x4271), seq 916229652, ack 3559928770, win 64260, options [mss 1460,sackOK,TS val 2378267839 ecr 4102506998,nop,wscale 7,mptcp join id 2 hmac 0x8d092a2821d0a5eb nonce 0xc4bf2f77], length 0
+
+
+12:07:50.299519 IP (tos 0x14, ttl 50, id 60131, offset 0, flags [DF], proto TCP (6), length 76)
+    39.144.181.16.8422 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xf16c (correct), seq 1, ack 1, win 256, options [nop,nop,TS val 4102507166 ecr 2378267818,mptcp join hmac 0x12c19a9be8b70e36c8707436fa0d9a690b8ba7f9], length 0
+12:07:50.299550 IP (tos 0x0, ttl 64, id 23275, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.8422: Flags [.], cksum 0x6854 (incorrect -> 0x283f), seq 1, ack 1, win 1002, options [nop,nop,TS val 2378267868 ecr 4102507166,mptcp dss ack 3509210868], length 0
+
+
+12:07:50.306197 IP (tos 0x14, ttl 50, id 24838, offset 0, flags [DF], proto TCP (6), length 76)
+    39.144.181.16.38681 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x758a (correct), seq 1, ack 1, win 256, options [nop,nop,TS val 4102507172 ecr 2378267839,mptcp join hmac 0xa87518feefde724c8dd3dc6607ca282cee9a9bb5], length 0
+12:07:50.306228 IP (tos 0x0, ttl 64, id 57874, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.38681: Flags [.], cksum 0x6854 (incorrect -> 0xa115), seq 1, ack 1, win 2503, options [nop,nop,TS val 2378267875 ecr 4102507172,mptcp dss ack 4252780108], length 0
+
+
+12:07:50.345872 IP (tos 0x14, ttl 50, id 28247, offset 0, flags [DF], proto TCP (6), length 1420)
+    39.144.181.16.38681 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xd1bf (correct), seq 1:1349, ack 1, win 256, options [nop,nop,TS val 4102507208 ecr 2378267839,mptcp dss ack 3483669343 seq 4252882892 subseq 1 len 1408 csum 0x5896], length 1348
+12:07:50.345877 IP (tos 0x0, ttl 64, id 57875, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.38681: Flags [.], cksum 0x6854 (incorrect -> 0x0c0b), seq 1, ack 1349, win 3393, options [nop,nop,TS val 2378267914 ecr 4102507208,mptcp dss ack 4252881484], length 0
+12:07:50.346114 IP (tos 0x14, ttl 50, id 2814, offset 0, flags [DF], proto TCP (6), length 1480)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [P.], cksum 0xed26 (correct), seq 408358:409766, ack 1, win 256, options [nop,nop,TS val 1218289797 ecr 2285532722,mptcp dss ack 3483669343 seq 4252881484 subseq 408358 len 1408 csum 0xa0d7], length 1408
+12:07:50.346121 IP (tos 0x0, ttl 64, id 32645, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [.], cksum 0x9b8a (incorrect -> 0x0866), seq 1, ack 409766, win 3416, options [nop,nop,TS val 2285532788 ecr 1218289797,mptcp dss ack 4252882892], length 0
+12:07:50.346150 IP (tos 0x14, ttl 50, id 2815, offset 0, flags [DF], proto TCP (6), length 672)
+    125.42.146.219.ssh-mgmt > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xead6 (correct), seq 409766:410366, ack 1, win 256, options [nop,nop,TS val 1218289797 ecr 2285532722,mptcp dss ack 3483669343 seq 4252896372 subseq 409766 len 600 csum 0xe0a3], length 600
+12:07:50.346155 IP (tos 0x0, ttl 64, id 32646, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.ssh-mgmt: Flags [.], cksum 0x9b8a (incorrect -> 0x0605), seq 1, ack 410366, win 3425, options [nop,nop,TS val 2285532788 ecr 1218289797,mptcp dss ack 4252882892], length 0
+12:07:50.346241 IP (tos 0x14, ttl 50, id 28311, offset 0, flags [DF], proto TCP (6), length 132)
+    39.144.181.16.38681 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x3b29 (correct), seq 1349:1409, ack 1, win 256, options [nop,nop,TS val 4102507208 ecr 2378267839,mptcp dss ack 3483669343 seq 4252882892 subseq 1 len 1408 csum 0x5896], length 60
+12:07:50.346247 IP (tos 0x0, ttl 64, id 57876, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 39.144.181.16.38681: Flags [.], cksum 0x6854 (incorrect -> 0x00ae), seq 1, ack 1409, win 3425, options [nop,nop,TS val 2378267915 ecr 4102507208,mptcp dss ack 4252884300], length 0
+
