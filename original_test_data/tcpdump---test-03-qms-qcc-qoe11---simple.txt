@@ -6,13 +6,23 @@ tcpdump---test-03-qms-qcc-qoe11.txt
 mptcp\ capable
 
 
+主流建立时间：22:31:33.589116
+主流发送时间：22:31:33.614734
+子流建立时间：22:31:34.048490
+子流发送时间：22:31:34.078400
+
+加一修正
 
 主流建立时间：22:31:34.089116
+主流发送时间：22:31:34.114734
 子流建立时间：22:31:34.548490
 子流发送时间：22:31:34.578400
 
+主流建立后开始发送数据的时间：0.025618
 主流建立后建立子流的时间：0.459374
 子流建立后开始发送数据的时间：0.029910
+主流发送数据后子流开始发送数据的时间：0.463666
+
 
 
 22:31:33.468489 IP (tos 0x14, ttl 50, id 44113, offset 0, flags [DF], proto TCP (6), length 72)
@@ -29,6 +39,22 @@ mptcp\ capable
     172.17.223.68.targus-getdata1 > 125.42.146.219.27144: Flags [S.], cksum 0x9b96 (incorrect -> 0x4886), seq 488748108, ack 662037575, win 64260, options [mss 1460,sackOK,TS val 2236556002 ecr 4038739420,nop,wscale 7,mptcp capable csum {0xef9f37f7003ab851}], length 0
 22:31:33.589116 IP (tos 0x14, ttl 50, id 15765, offset 0, flags [DF], proto TCP (6), length 80)
     125.42.146.219.27144 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xaa59 (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 4038739451 ecr 2236556002,mptcp capable csum {0x72b2e5ee4cb306f1,0xef9f37f7003ab851},mptcp dss ack 3503410213], length 0
+22:31:33.589182 IP (tos 0x0, ttl 64, id 34863, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.27144: Flags [.], cksum 0x9b8a (incorrect -> 0x0b92), seq 1, ack 1, win 503, options [nop,nop,TS val 2236556031 ecr 4038739451,mptcp dss ack 2282859819], length 0
+22:31:33.589193 IP (tos 0x14, ttl 50, id 15766, offset 0, flags [DF], proto TCP (6), length 68)
+    125.42.146.219.27144 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x1926 (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 4038739451 ecr 2236556002,mptcp add-addr id 4 10.44.16.5,mptcp dss ack 3503410213], length 0
+22:31:33.590725 IP (tos 0x14, ttl 50, id 15767, offset 0, flags [DF], proto TCP (6), length 109)
+    125.42.146.219.27144 > 172.17.223.68.targus-getdata1: Flags [P.], cksum 0x9402 (correct), seq 1:38, ack 1, win 128, options [nop,nop,TS val 4038739453 ecr 2236556002,mptcp dss ack 3503410213 seq 2282859819 subseq 1 len 37 csum 0x4d0b], length 37
+22:31:33.590740 IP (tos 0x0, ttl 64, id 34864, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.27144: Flags [.], cksum 0x9b8a (incorrect -> 0x0b45), seq 1, ack 38, win 503, options [nop,nop,TS val 2236556032 ecr 4038739453,mptcp dss ack 2282859856], length 0
+22:31:33.592242 IP (tos 0x14, ttl 50, id 44120, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.27141 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x223a (correct), seq 158, ack 3, win 128, options [nop,nop,TS val 4038739457 ecr 2236555973,mptcp dss ack 1859141290], length 0
+22:31:33.592277 IP (tos 0x0, ttl 64, id 22909, offset 0, flags [DF], proto TCP (6), length 74)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.27141: Flags [P.], cksum 0x9b98 (incorrect -> 0x3a1e), seq 3:5, ack 158, win 503, options [nop,nop,TS val 2236556034 ecr 4038739396,mptcp dss ack 4100054953 seq 1859141290 subseq 3 len 2 csum 0xe16b], length 2
+22:31:33.611849 IP (tos 0x14, ttl 50, id 44121, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.27141 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x21e6 (correct), seq 158, ack 5, win 128, options [nop,nop,TS val 4038739476 ecr 2236556034,mptcp dss ack 1859141292], length 0
+22:31:33.614734 IP (tos 0x14, ttl 50, id 15768, offset 0, flags [DF], proto TCP (6), length 1480)
+    125.42.146.219.27144 > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x8e54 (correct), seq 38:1446, ack 1, win 128, options [nop,nop,TS val 4038739477 ecr 2236556032,mptcp dss ack 3503410213 seq 2282859856 subseq 38 len 1408 csum 0x5edb], length 1408
 
 
 22:31:33.748717 IP (tos 0x14, ttl 50, id 46139, offset 0, flags [DF], proto TCP (6), length 72)

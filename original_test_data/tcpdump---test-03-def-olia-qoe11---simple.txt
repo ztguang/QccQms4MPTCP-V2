@@ -8,17 +8,21 @@ mptcp\ capable
 
 
 主流建立时间：11:45:41.889506
+主流发送时间：11:45:42.028014
 子流建立时间：11:45:42.084089
 子流发送时间：11:45:42.127861
 
 加一修正
 
 主流建立时间：11:45:42.089506
+主流发送时间：11:45:42.228014
 子流建立时间：11:45:42.284089
 子流发送时间：11:45:42.327861
 
+主流建立后开始发送数据的时间：0.138508
 主流建立后建立子流的时间：0.194583
 子流建立后开始发送数据的时间：0.043772
+主流发送数据后子流开始发送数据的时间：0.099847
 
 
 
@@ -36,6 +40,26 @@ mptcp\ capable
     172.17.223.68.targus-getdata1 > 125.42.146.219.bruce: Flags [S.], cksum 0x9b96 (incorrect -> 0x7f90), seq 730495192, ack 706973100, win 64260, options [mss 1460,sackOK,TS val 2284204299 ecr 9259109,nop,wscale 7,mptcp capable csum {0x2a1855dbfa5fec2f}], length 0
 11:45:41.889506 IP (tos 0x14, ttl 50, id 28067, offset 0, flags [DF], proto TCP (6), length 80)
     125.42.146.219.bruce > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x069b (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 9259142 ecr 2284204299,mptcp capable csum {0x5e42904bc6653481,0x2a1855dbfa5fec2f},mptcp dss ack 3333321696], length 0
+11:45:41.889575 IP (tos 0x0, ttl 64, id 11590, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.bruce: Flags [.], cksum 0x9b8a (incorrect -> 0xbb38), seq 1, ack 1, win 503, options [nop,nop,TS val 2284204331 ecr 9259142,mptcp dss ack 391523238], length 0
+11:45:41.889587 IP (tos 0x14, ttl 50, id 28068, offset 0, flags [DF], proto TCP (6), length 68)
+    125.42.146.219.bruce > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x3530 (correct), seq 1, ack 1, win 128, options [nop,nop,TS val 9259142 ecr 2284204299,mptcp add-addr id 3 10.36.19.213,mptcp dss ack 3333321696], length 0
+11:45:41.889596 IP (tos 0x14, ttl 50, id 28069, offset 0, flags [DF], proto TCP (6), length 109)
+    125.42.146.219.bruce > 172.17.223.68.targus-getdata1: Flags [P.], cksum 0x8d12 (correct), seq 1:38, ack 1, win 128, options [nop,nop,TS val 9259143 ecr 2284204299,mptcp dss ack 3333321696 seq 391523238 subseq 1 len 37 csum 0x614e], length 37
+11:45:41.889603 IP (tos 0x0, ttl 64, id 11591, offset 0, flags [DF], proto TCP (6), length 60)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.bruce: Flags [.], cksum 0x9b8a (incorrect -> 0xbaed), seq 1, ack 38, win 503, options [nop,nop,TS val 2284204331 ecr 9259143,mptcp dss ack 391523275], length 0
+11:45:41.893003 IP (tos 0x14, ttl 50, id 48369, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.appswitch-emp > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xd27a (correct), seq 158, ack 3, win 128, options [nop,nop,TS val 9259146 ecr 2284204271,mptcp dss ack 3148302417], length 0
+11:45:41.893019 IP (tos 0x0, ttl 64, id 19715, offset 0, flags [DF], proto TCP (6), length 74)
+    172.17.223.68.targus-getdata1 > 125.42.146.219.appswitch-emp: Flags [P.], cksum 0x9b98 (incorrect -> 0x83df), seq 3:5, ack 158, win 503, options [nop,nop,TS val 2284204334 ecr 9259079,mptcp dss ack 275591266 seq 3148302417 subseq 3 len 2 csum 0xdb2b], length 2
+11:45:41.990654 IP (tos 0x48, ttl 64, id 10834, offset 0, flags [DF], proto TCP (6), length 168)
+    172.17.223.68.ssh > 125.42.146.219.7138: Flags [P.], cksum 0x9bf6 (incorrect -> 0x2909), seq 1492:1608, ack 1, win 501, options [nop,nop,TS val 2284204432 ecr 2668708784], length 116
+11:45:42.007051 IP (tos 0x14, ttl 50, id 26186, offset 0, flags [DF], proto TCP (6), length 52)
+    125.42.146.219.7138 > 172.17.223.68.ssh: Flags [.], cksum 0xb3a4 (correct), seq 1, ack 1608, win 501, options [nop,nop,TS val 2668709285 ecr 2284204432], length 0
+11:45:42.016130 IP (tos 0x14, ttl 50, id 48370, offset 0, flags [DF], proto TCP (6), length 60)
+    125.42.146.219.appswitch-emp > 172.17.223.68.targus-getdata1: Flags [.], cksum 0xd1bc (correct), seq 158, ack 5, win 128, options [nop,nop,TS val 9259269 ecr 2284204334,mptcp dss ack 3148302419], length 0
+11:45:42.028014 IP (tos 0x14, ttl 50, id 28070, offset 0, flags [DF], proto TCP (6), length 1480)
+    125.42.146.219.bruce > 172.17.223.68.targus-getdata1: Flags [.], cksum 0x86fb (correct), seq 38:1446, ack 1, win 128, options [nop,nop,TS val 9259270 ecr 2284204331,mptcp dss ack 3333321696 seq 391523275 subseq 38 len 1408 csum 0x66be], length 1408
 
 
 11:45:42.032745 IP (tos 0x14, ttl 50, id 42081, offset 0, flags [DF], proto TCP (6), length 72)
